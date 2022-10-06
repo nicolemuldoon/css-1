@@ -40,18 +40,20 @@ html {
 
 /*Write a ruleset that targets both the card header, and card footer, giving them both a
 computed total height of 50px (including a content height of 30px and padding of 10px on all sides.) 
-But express it in ems. */
+But express it in ems. 
+
+Default text size = 10px, 10px therefore = 1em */
 
 .card header, .card footer {
-  height:;
-  padding:;
+  height:3em;
+  padding:1em;
 }
 
 /* The default margin applied to the <h2> and <p> elements by the browser will
 interfere with our design, so write a rule that targets all these elements and sets their margin to 0. */
 
-p, h2 {
-  margin:0px;
+.card p, .card h2 {
+  margin:0;
 }
 
 /* To stop the image from spilling out of the main business card content (the <article> element), 
@@ -60,8 +62,8 @@ Also give it a background color of semi-transparent black, resulting in a slight
 that lets the background red color shine through a bit too. */
 
 .card article {
-  height: 12em;
-  background-color:rgba(0,0,0,0.5);
+  height:12em;
+  background-color:rgba(0,0,0,0.25);
 }
 
 /* Write a ruleset that gives the <h2> an effective font size of 20px (but expressed in ems) and an 
@@ -69,8 +71,8 @@ appropriate line height to place it in the center of the header's content box. R
 that the content box height should be 30px — this gives you all the numbers you need to calculate the line height. */
 
 .card header h2 {
-  font-size: 20px;
-  line-height:;  30px
+  font-size:2em;
+  line-height:1.5;
 }
 
 /* Write a ruleset that gives the <p> inside the footer an effective font size of 15px 
@@ -79,8 +81,8 @@ content box. Recall from earlier that the content box height should be 30px — 
 all the numbers you need to calculate the line height. */
 
 .card footer p {
-  font-size:15px;
-  line-height:; 30px
+  font-size:1.5em;
+  line-height:2;
 } 
 
 /* As a last little touch, give the paragraph inside the <article> an appropriate padding value
@@ -88,7 +90,8 @@ so that its left edge lines up with the <h2> and footer paragraph, and set its c
 light so it is easy to read. */
 
 .card article p {
- padding:;
+ padding:1em;
+ color: rgba(255,255,255,0);
 }
 
 
